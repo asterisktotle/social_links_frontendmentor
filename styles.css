@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --primary-Green: hsl(75, 94%, 57%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Grey: hsl(0, 0%, 20%);
+    --neutral-Dark-Grey: hsl(0, 0%, 12%);
+    --neutral-Off-Black: hsl(0, 0%, 8%);
+    --font-light: 400;
+    --font-medium: 600;
+    --font-large: 700;
+}
+body{
+    background: var(--neutral-Off-Black);
+    color: var(--neutral-White);
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    background: var(--neutral-Dark-Grey);
+    width:50%;
+    max-width:360px;
+    padding: 2.5em;
+    text-align: center;
+    border-radius: 1em;
+}
+img{
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.account ul li{
+    background: var(--neutral-Grey);
+    padding: 1em;
+    max-width: 100%;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    
+}
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: var(--font-large);
+}
+
+.card > p {
+    margin-bottom: 2rem;
+}
+
+h3{
+    color: var(--primary-Green);
+    font-weight: var(--font-medium);
+    margin-bottom: 2rem;
+}
+a{
+    color: var(--neutral-White);
+    font-weight: var(--font-large);
+}
+
+a:hover{
+    color: var(--primary-Green);
+}
+@media (max-width: 500px){
+    .card{
+    width: 90%;
+    max-width:360px;
+    padding: 2.5em;
+    }
+}
+@media (max-width: 1440px){
+    .card{
+        width: 90%;
+        max-width:400px;
+        padding: 2.5em;
+        }
+}
